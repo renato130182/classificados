@@ -1,0 +1,10 @@
+pt-BR:
+  sessions:
+    create:
+      welcome: "Bem vindo"
+      invalid_credentials: "Email ou senha invalido"
+    destroy:
+      sessionfinish: "Sessão finalizada"
+  users:
+    create:
+      success: "Cadastro realizado com sucesso!"

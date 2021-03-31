@@ -25,7 +25,7 @@ class UserTest < ActiveSupport::TestCase
 
   test "Email unico" do
     user = User.create!(name: "Renato", email: "teste@123.com",password: "123@123", password_confirmation: "123@123")
-    other = User.create(name: "Renato", email: "teste@123.com",password: "123@123", password_confirmation: "123@123")
+    other = User.create(email: "teste@123.com")
     assert other.errors[:email].any?
   end
   

@@ -1,4 +1,13 @@
-<h1>Home</h1>
-<p>
-Conteudo 
-</p>
+<h1>Anuncios</h1>
+
+<div>
+    <ul>
+        <% @ads.each do |ads|%>
+            <li>
+                <p><strong><%= ads.title %></strong></p>
+                <p><%= ads.description %></p>
+                <p><%= ads.prince %></p>
+            </li>
+        <%end %>
+    </ul>
+</div>
